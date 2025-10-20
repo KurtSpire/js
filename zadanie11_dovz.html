@@ -1,0 +1,21 @@
+ <html> 
+         <body> 
+          <div style="color:green;font-size:36px;"> 
+            <script language="JavaScript"> 
+
+              var D1_dovz=prompt("Data1=",""); 
+              var D2_dovz=prompt("Data2=",""); 
+              var sekund; 
+              var a=parseFloat(D1_dovz); 
+              var b=parseFloat(D2_dovz); 
+              sekund=(a-b)*24*60*60; 
+              document.write("Ilość sekund między dniami "+a+" i "+b+" = "+sekund+"<br>"); 
+              function okno_zamknij_dovz() 
+                 { 
+                   window.close() 
+                 } 
+              </script> 
+            </div> 
+          <input type="button" value="zamknij okno" onclick="okno_zamknij_dovz()"/> 
+        </body> 
+       </html> 

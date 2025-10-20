@@ -1,0 +1,31 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<html> 
+         <body> 
+          <div style="color:green;font-size:36px;"> 
+            <script language="JavaScript"> 
+
+              var D1_dovz=prompt("Data1=",""); 
+              var G1_dovz=prompt("Godzina1=","");
+			  var D2_dovz=prompt("Data2=",""); 
+			  var G2_dovz=prompt("Godzina2=",""); 
+              var sekund; 
+              var a=parseFloat(D1_dovz); 
+              var b=parseFloat(D2_dovz); 
+			  var c=parseFloat(G1_dovz); 
+			  var d=parseFloat(G2_dovz); 
+              sekund=(a-b)*24*60*60+(c-d)*60*60; 
+              document.write("Ilość sekund "+a+" i "+b+" = "+sekund+"<br>"); 
+              function okno_zamknij_dovz() 
+                 { 
+                   window.close() 
+                 } 
+              </script> 
+            </div> 
+          <input type="button" value="zamknij okno" onclick="okno_zamknij_dovz()"/> 
+        </body> 
+</html> 	 
+	 </textarea> 
+   </body> 
+</html> 

@@ -1,0 +1,28 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="24"> 
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="ISO-8859-1">
+</head>
+   <body> 
+		<div style="color:green;font-size:36px;">
+		<script language="JavaScript">
+		var x_dov=prompt(" Podaj pierwszą liczbę    A = ","");
+		var y_dov=prompt(" Podaj drugą liczbę       B = ","");
+		var a_dov=parseFloat(x_dov);
+		var b_dov=parseFloat(y_dov);
+		document.write("(" + a_dov + "+" + b_dov + ")^3 = " + a_dov + "^3 + 3*((" + a_dov + ")^2)*(" + b_dov + ") + 3*(" + a_dov + ")*((" + b_dov + ")^2) + "+b_dov+"^3 = "+ a_dov*a_dov*a_dov + " + " + 3*a_dov*a_dov*b_dov + " + " + 3*a_dov*b_dov*b_dov + " + " + b_dov*b_dov*b_dov + " = " + (a_dov*a_dov*a_dov+3*a_dov*a_dov*b_dov+3*a_dov*b_dov*b_dov+b_dov*b_dov*b_dov) );
+		function okno_zamknij_dovz() 
+                 { 
+                   window.close() 
+                 }
+		</script>
+		</div>
+		<input type="button" value="zamknij okno" onclick="okno_zamknij_dovz()"/>
+   </body> 
+</html>    	 
+	 </textarea> 
+   </body> 
+</html> 
