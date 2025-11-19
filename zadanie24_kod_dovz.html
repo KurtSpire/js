@@ -1,0 +1,26 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="32"> 
+<html>  
+<head>  
+	<script language="JavaScript"> 
+			
+			var x1_dov=parseFloat(prompt("Podaj x1 = ","")) ;
+			var x2_dov=parseFloat(prompt("Podaj x2 = ","")) ;
+			var y1_dov=3*Math.pow(x1_dov,6/8);
+			var rad_x1_dov=(x1_dov*Math.PI)/180;
+			var y2_dov=2*Math.cos(rad_x1_dov)+3*Math.sin(rad_x1_dov);
+			var pod_pierwiastkiem_dov=Math.pow(x1_dov,5)+2*Math.pow(x2_dov,4);
+			var y3_dov=Math.pow(pod_pierwiastkiem_dov,1/3)*Math.abs(x1_dov-x2_dov);
+			
+			document.write("x1 = " + x1_dov + "&nbsp&nbsp&nbsp&nbsp&nbsp" + "x2 = " + x2_dov + "<br>");
+			document.write("x1 = " + x1_dov + "&nbsp&nbsp&nbsp&nbsp&nbsp" + "x1 = " + rad_x1_dov.toFixed(2) + "<br>");
+			document.write("y1 = " + y1_dov.toFixed(2) + "<br>" + "y2 = " + y2_dov.toFixed(2) + "<br>" + "y3 = " + y3_dov.toFixed(2));
+	</script>
+</head>
+<body>
+</body>  
+</html>
+	 </textarea> 
+   </body> 
+</html> 

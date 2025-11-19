@@ -1,0 +1,54 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="50"> 
+<html>  
+<head>  
+<title> 
+Obliczenie pola i obwodu prostokąta 
+</title> 
+<script language="JavaScript"> 
+function Pole_Dovzhyk(a_dov,b_dov) 
+{ 
+a_dov=parseFloat(a_dov) 
+b_dov=parseFloat(b_dov) 
+wynik_dov=a_dov*b_dov 
+document.getElementsByName('pole')[0].value=wynik_dov.toFixed(2);   
+alert("Pole prostokąta = "+wynik_dov.toFixed(2)+" cm^2");                                                  
+pokaz1.innerHTML="Pole prostokąta = "+wynik_dov.toFixed(2)+" cm^2"+"<br>";        
+}
+ 
+function Obwod_Dovzhyk(a_dov,b_dov) 
+{ 
+a_dov=parseFloat(a_dov) 
+b_dov=parseFloat(b_dov) 
+wynik_dov=2*a_dov+2*b_dov 
+document.getElementsByName('obwod')[0].value=wynik_dov.toFixed(2);   
+alert("Obwód prostokąta = "+wynik_dov.toFixed(2)+" cm");                                               
+pokaz1.innerHTML="Obwód prostokąta = "+wynik_dov.toFixed(2)+" cm"+"<br>";       
+} 
+       </script> 
+</head>  
+<body>  
+Obliczenie pola i obwodu prostokąta
+<br> <br> 
+<form name="formularz" action="..." onsubmit="Pole_Dovzhyk(this.aa_dov.value,this.bb_dov.value); 
+Obwod_Dovzhyk(this.aa_dov.value,this.bb_dov.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="aa_dov"> 
+     Podaj b= 
+        <input  size="6"  name="bb_dov"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Pole prostokąta = <input  size="6"  name="pole"> 
+       Obwód prostokąta = <input  size="6"  name="obwod"> 
+</form> 
+<table> 
+              <tr id="pokaz1"></tr> 
+              <tr id="pokaz2"></tr> 
+</table> 
+</body>  
+</html>	 
+	 </textarea> 
+   </body> 
+</html> 

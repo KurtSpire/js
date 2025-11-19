@@ -1,0 +1,62 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="50"> 
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+   function AB_dov() {
+   var Ax=parseFloat(document.getElementById('ax').value);
+   var Ay=parseFloat(document.getElementById('ay').value);
+   var Bx=parseFloat(document.getElementById('bx').value);
+   var By=parseFloat(document.getElementById('by').value);
+   var wynik;
+   
+   wynik=Math.sqrt(Math.pow(Ax-Bx,2)+Math.pow(Ay-By,2));
+   document.getElementById("wynik").innerHTML ="Odległość między tymi punktami to: "+wynik.toFixed(2);
+   }
+   
+   function AC_dov() {
+   var Ax=parseFloat(document.getElementById('ax').value);
+   var Ay=parseFloat(document.getElementById('ay').value);
+   var Cx=parseFloat(document.getElementById('cx').value);
+   var Cy=parseFloat(document.getElementById('cy').value);
+   var wynik;
+   
+   wynik=Math.sqrt(Math.pow(Ax-Cx,2)+Math.pow(Ay-Cy,2));
+   document.getElementById("wynik").innerHTML ="Odległość między tymi punktami to: "+wynik.toFixed(2);
+   }
+   
+   function BC_dov() {
+   var Bx=parseFloat(document.getElementById('bx').value);
+   var By=parseFloat(document.getElementById('by').value);
+   var Cx=parseFloat(document.getElementById('cx').value);
+   var Cy=parseFloat(document.getElementById('cy').value);
+   var wynik;
+   
+   wynik=Math.sqrt(Math.pow(Bx-Cx,2)+Math.pow(By-Cy,2));
+   document.getElementById("wynik").innerHTML ="Odległość między tymi punktami to: "+wynik.toFixed(2);
+   }
+   
+ 
+ </script> 
+  <h1>Wszystko o KWADRACIE</h1><br><br> 
+  Podaj współrzędne punktów: <br><br>
+  Ax = <input type="text" id="ax" value="Podaj współrzędną"><br><br>
+  Ay = <input type="text" id="ay" value="Podaj współrzędną"><br><br>
+  Bx = <input type="text" id="bx" value="Podaj współrzędną"><br><br>
+  By = <input type="text" id="by" value="Podaj współrzędną"><br><br>
+  Cx = <input type="text" id="cx" value="Podaj współrzędną"><br><br>
+  Cy = <input type="text" id="cy" value="Podaj współrzędną"><br><br>
+  <input type="button" name="AB" id="AB" value="Oblicz odległość między A i B" Onclick="AB_dov()"><br><br>
+  <input type="button" name="BC" id="BC" value="Oblicz odległość między B i C" Onclick="BC_dov()"><br><br>
+  <input type="button" name="AC" id="AC" value="Oblicz odległość między A i C" Onclick="AC_dov()"><br><br>
+  <div  style="color:red;font-size:50px;"id="wynik"></div> 
+</body> 
+</html>   	 
+	 </textarea> 
+   </body> 
+</html> 

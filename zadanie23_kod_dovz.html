@@ -1,0 +1,47 @@
+<html> 
+   <body> 
+     <textarea cols="90" rows="45"> 
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styl.css"> 
+ </head> 
+<body> 
+ <script type="text/javascript"> 
+   function dlugosc_drabiny_dov(d,x) {
+   var d_dov=parseFloat(d);
+   var x_dov=parseFloat(x);
+   var l_dov=Math.sqrt(x*x+d*d);
+   var arad_dov=Math.asin(d/l_dov);
+   var alfa_dov=arad_dov*(180/Math.PI);
+   document.getElementsByName('drabina')[0].value=l_dov.toFixed(2);
+   alert("Drabina = "+l_dov.toFixed(2));                                               
+   pokaz1.innerHTML="Drabina = "+l_dov.toFixed(2)+"<br>"; 
+   document.getElementsByName('alfa')[0].value=alfa_dov.toFixed(2);
+   alert("Alfa = "+alfa_dov.toFixed(2));                                               
+   pokaz2.innerHTML="Alfa = "+alfa_dov.toFixed(2)+"<br>"; 
+   }
+   
+  
+ 
+ </script> 
+  <form name="formularz" action="..." onsubmit="dlugosc_drabiny_dov(this.d.value,this.x.value);return false">   
+     Podaj d= 
+        <input  size="6"  name="d"> 
+     Podaj x= 
+        <input  size="6"  name="x"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Drabina = <input  size="6"  name="drabina"> 
+      Alfa = <input  size="6"  name="alfa"> 
+</form>
+<table> 
+              <tr id="pokaz1"></tr> 
+              <tr id="pokaz2"></tr> 
+</table> 
+</body> 
+</html>  
+	 </textarea> 
+   </body> 
+</html> 
