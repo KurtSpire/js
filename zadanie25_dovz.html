@@ -1,0 +1,20 @@
+<html>  
+<head>  
+	<script language="JavaScript"> 
+			
+			var No_dov=parseFloat(prompt("Podaj No = ","")) ;
+			var t_dov=parseFloat(prompt("Podaj t = ","")) ;
+			var T12_dov=parseFloat(prompt("Podaj T1/2 = ",""));
+			var lambda_dov=Math.log(2)/T12_dov;
+			var N_dov=No_dov*Math.exp(-lambda_dov*t_dov);
+			
+			document.write("N0 = " + No_dov + "[sztuk]" + "<br>");
+			document.write("t = " + t_dov + "[lat]" + "<br>");
+			document.write("T1/2 = " + T12_dov + "<br>");
+			document.write("lambda = " + lambda_dov.toFixed(7) + "[1/rok]" + "<br>");
+			document.write("N = " + N_dov.toFixed(7) + "[sztuk]"+ "<br>");
+	</script>
+</head>
+<body>
+</body>  
+</html>

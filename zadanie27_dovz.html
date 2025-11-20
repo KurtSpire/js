@@ -1,0 +1,34 @@
+<html>  
+<head>  
+<title> 
+Zadanie 27
+</title> 
+<script language="JavaScript"> 
+function funkcja_Dovzhyk(odl_dov,s_dov) 
+{ 
+odl_dov=parseFloat(odl_dov) ;
+s_dov=parseFloat(s_dov) ;
+h_dov=Math.sqrt(Math.pow(s_dov,2)-Math.pow(odl_dov,2)); 
+alfa_dov=Math.asin(h_dov/s_dov)*(180/Math.PI);  
+document.getElementsByName('wysokosc')[0].value=h_dov.toFixed(2);
+document.getElementsByName('kat')[0].value=alfa_dov.toFixed(2);                                                   
+}
+
+</script> 
+</head>  
+<body> 
+Zadanie 27 
+<br> <br> 
+<form name="formularz" action="..." onsubmit="funkcja_Dovzhyk(this.odleglosc.value,this.droga.value); return false">   
+     Podaj odległość między Dawidem a Arturem = 
+        <input  size="6"  name="odleglosc"> 
+     Podaj drogę przebytą przez samolot = 
+        <input  size="6"  name="droga"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Wysokość = <input  size="6"  name="wysokosc"> 
+       Kąt startu samolotu = <input  size="6"  name="kat"> 
+</form> 
+</body>  
+</html>	

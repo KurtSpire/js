@@ -1,0 +1,51 @@
+<html>  
+<head>  
+<title> 
+Obliczenie pola i obwodu trapezu
+</title> 
+<script language="JavaScript"> 
+function Pole_Dovzhyk(a_dov,b_dov,h_dov) 
+{ 
+a_dov=parseFloat(a_dov);
+b_dov=parseFloat(b_dov); 
+h_dov=parseFloat(h_dov); 
+wynik_dov=0.5*(a_dov+b_dov)*h_dov;
+document.getElementsByName('pole')[0].value=wynik_dov.toFixed(2);                                               
+pokaz1.innerHTML="Pole trapezu = "+wynik_dov.toFixed(2)+" cm^2"+"<br>";        
+}
+ 
+function Obwod_Dovzhyk(a_dov,b_dov,h_dov) 
+{ 
+a_dov=parseFloat(a_dov);
+b_dov=parseFloat(b_dov); 
+h_dov=parseFloat(h_dov);
+ramie_dov=Math.sqrt(Math.pow(h_dov,2)+Math.pow(Math.abs((a_dov-b_dov)/2),2)); 
+wynik_dov=a_dov+b_dov+ramie_dov*2; 
+document.getElementsByName('obwod')[0].value=wynik_dov.toFixed(2);                                              
+pokaz1.innerHTML="Obwód trapezu = "+wynik_dov.toFixed(2)+" cm"+"<br>";       
+} 
+       </script> 
+</head>  
+<body>  
+Obliczenie pola i obwodu trapezu
+<br> <br> 
+<form name="formularz" action="..." onsubmit="Pole_Dovzhyk(this.aa_dov.value,this.bb_dov.value,this.hh_dov.value); 
+Obwod_Dovzhyk(this.aa_dov.value,this.bb_dov.value,this.hh_dov.value);return false">   
+     Podaj a= 
+        <input  size="6"  name="aa_dov"> 
+     Podaj b= 
+        <input  size="6"  name="bb_dov"> 
+	 Podaj h= 
+        <input  size="6"  name="hh_dov"> 
+                       <br>   <br> 
+         <input  TYPE="submit"  Value="oblicz" > 
+                       <br>   <br> 
+       Pole prostokąta = <input  size="6"  name="pole"> 
+       Obwód prostokąta = <input  size="6"  name="obwod"> 
+</form> 
+<table> 
+              <tr id="pokaz1"></tr> 
+              <tr id="pokaz2"></tr> 
+</table> 
+</body>  
+</html>	
